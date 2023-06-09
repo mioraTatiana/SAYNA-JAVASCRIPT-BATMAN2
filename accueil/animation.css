@@ -1,0 +1,14 @@
+#HOME:hover,#para:hover,#ilBatman:hover,.boutonhaut:hover,.boutonFooter:hover{
+    font-weight: bolder;
+    text-decoration: underline;
+    opacity: 0.4;
+}
+
+.image:hover,#justiceImage:hover,#imageMulti:hover{
+    transform: scale(1.1) ;
+}
+
+.icon:hover{
+    filter: hue-rotate(90deg);
+}
+
