@@ -1,0 +1,176 @@
+/* nav */
+nav{
+    width: 1165px;
+    height: 132px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+    padding-left: 10px ; 
+    padding-right: 10px;
+    border-top: 0;
+    border-bottom: 2px solid wheat;
+}
+.lienNav{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.HOME, .GAME{
+    text-decoration: none;
+    color: white;
+    
+}
+
+/*  la division sous nav */
+.sousNav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 600px;
+}
+
+.ImagenBlock{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -200px;
+    left: 1095px;
+    gap: 1px;
+    
+}
+
+.bat_flèche{
+    width: 80px;
+    height: 80px;
+}
+
+.icon{
+    width: 20px;
+    height: 20px;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+
+}
+
+.paradebut{
+    padding-left: 50px;
+}
+
+
+/* body */
+body{
+    background-color: black;
+    color: antiquewhite;
+    padding: 0;
+    margin: 0;
+}
+/* tous les sections */
+.barre{
+    background-color: azure;
+    height: 10px;
+}
+/* les div dans les sections */
+nav,.sousNav,.divSection{
+    margin-left: 80px;
+    margin-right: 80px;
+    border-left: 2px solid wheat;
+    border-right: 2px solid wheat;
+    margin-bottom: 0;
+    margin-top: 0;
+
+}
+
+.divSection{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.question{
+    display: flex;
+    flex-direction: row;
+    border: 5px solid white ;
+
+}
+
+.divCheckbox{
+    width: 400px;
+    height: 30px;
+    background-color: gray;
+    margin-top: 10px;
+    align-items: center;
+    
+
+}
+
+
+
+/* section footer */
+.sectionFooter{
+    margin-bottom: 100px;
+}
+
+.phraseFooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 100px ;
+}
+
+.textFooter{
+    font-size: 10px;
+    padding-top: 5px;
+}
+
+.enligne{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px;
+    
+}
+
+button,input[type="submit"]{
+    width: 200px;
+    height: 50px;
+    background:radial-gradient(
+     #717492 ,  rgb(64, 32, 2)  ) ;
+    border: none;
+
+}
+
+.submit{
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* GAME ACCUEIL */
+.gameAccueil{
+    background-image:  url("Illustrations/Batgame_1.png");
+    height: 800px;
+}
+
+/* Chevalier noir */
+#divChevalierNoir{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.flecheHaut{
+    height: 80px;
+    width: 100px;
+}
+
+
+
+

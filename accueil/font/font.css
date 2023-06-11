@@ -1,0 +1,26 @@
+
+/* Police */
+@font-face{
+    font-family: myFont;
+    src: url(Rajdhani-Medium.ttf);
+}
+
+h1{
+    font-family: "myFont";
+    font-size: 36px;
+}
+
+@font-face {
+    font-family: spaceBold;
+    src: url(SpaceGrotesk-Bold.ttf);
+}
+
+h2{
+    font-family: "spaceBold";
+    font-size: 12px;
+}
+
+@font-face {
+    font-family: spaceRegular;
+    src: url(SpaceGrotesk-Regular.ttf);
+}

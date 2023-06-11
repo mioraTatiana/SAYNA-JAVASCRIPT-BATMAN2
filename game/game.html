@@ -5,38 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
     <title>Game</title>
+    <link rel="stylesheet" href="game.css">
+    <link rel="stylesheet" href="../accueil/font/font.css">
 
-    <style>
-        /* body */
-        body{
-            background-color: black;
-            color: antiquewhite;
-            padding: 0;
-            margin: 0;
-        }
-        /* tous les sections */
-        .barre{
-            background-color: azure;
-            height: 10px;
-        }
-        /* les div dans les sections */
-        nav,.sousNav,.divSection{
-            margin-left: 80px;
-            margin-right: 80px;
-            border-left: 2px solid wheat;
-            border-right: 2px solid wheat;
-            margin-bottom: 0;
-            margin-top: 0;
-
-        }
-
-        /* GAME ACCUEIL */
-        .gameAccueil{
-            background-image:  url("Illustrations/Batgame_1.png");
-            height: 700px;
-        }
-
-    </style>
 </head>
 <body>
     <main>
@@ -46,9 +17,11 @@
             <nav >
                 <img src="../accueil/Logos/logohome.png" alt="icone de batman" class="iconBatman1">
 
-                <a href="../accueil/index.html" class="HOME">HOME</a>
-                <a href="game.html" class="GAME">GAME</a>
+                <div class="lienNav">
+                    <a href="../accueil/index.html" class="HOME">HOME</a>
+                    <a href="game.html" class="GAME">GAME</a>
     
+                </div>
             </nav>
     
             <div class="sousNav">
@@ -78,10 +51,13 @@
 
         <!-- CHEVALIER NOIR -->
         <section class="chevalierNoir">
-            <div class="divSection">
-                <img src="../accueil/Logos/flèche_down_header.png" alt="flèche_down_header" class="flecheHaut" >
+            <div class="divSection" id="divChevalierNoir">
+                <div >
+                    <img src="../accueil/Logos/flèche_down_header.png" alt="flèche_down_header" class="flecheHaut" >
+
+                </div>
                 <img src="Illustrations/Batgame_2.png" alt="Image de batman en noir" class="batmanNoir">
-                <button>DEMARRER LE QUIZ</button>
+                <button id="demarrer">DEMARRER LE QUIZ</button>
                 <div class="sectionFooter">
                     <div class="phraseFooter">
                         <img src="../accueil/Logos/icon_WB.png" alt="icon_WB">
@@ -110,8 +86,10 @@
             <nav >
                 <img src="../accueil/Logos/logohome.png" alt="icone de batman" class="iconBatman1">
 
-                <a href="../accueil/index.html" class="HOME">HOME</a>
-                <a href="game.html" class="GAME">GAME</a>
+                <div class="lienNav">
+                    <a href="../accueil/index.html" class="HOME">HOME</a>
+                    <a href="game.html" class="GAME">GAME</a>
+                </div>
     
             </nav>
     
@@ -167,30 +145,34 @@
                             <label for="LeJoker">Le Joker</label><br>
                             </div>
 
-                            <input type="submit" value="QUESTION SUIVANTE">
+                                                        <div class="submit">
+                                <input type="submit" value="QUESTION SUIVANTE">
+                            </div>
+
                         </form>
                     </div>
 
-                    <div class="sectionFooter">
-                        <div class="phraseFooter">
-                            <img src="../accueil/Logos/icon_WB.png" alt="icon_WB">
-                            <div class="textFooter">
-                                Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves
-                            </div>
-                        </div>
-            
-                        <div class="enligne">
-                            <img src="../accueil/Logos/logo_sayna_white.png" alt="sayna" >
-                            <img src="../accueil/Logos/icon_x.png" alt="icon_x">
-                            <img src="../accueil/Logos/icon_DC.png" alt="icon_DC">
-                            <img src="../accueil/Logos/icon_facebook.png" alt="facebook" class="icon">
-                            <img src="../accueil/Logos/icon_ig.png" alt="instagram" class="icon">
-                            <img src="../accueil/Logos/icon_tw.png" alt="twitter" class="icon">
-                        </div>
-        
-                    </div>
 
                 </div>
+                <div class="sectionFooter">
+                    <div class="phraseFooter">
+                        <img src="../accueil/Logos/icon_WB.png" alt="icon_WB">
+                        <div class="textFooter">
+                            Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves
+                        </div>
+                    </div>
+        
+                    <div class="enligne">
+                        <img src="../accueil/Logos/logo_sayna_white.png" alt="sayna" >
+                        <img src="../accueil/Logos/icon_x.png" alt="icon_x">
+                        <img src="../accueil/Logos/icon_DC.png" alt="icon_DC">
+                        <img src="../accueil/Logos/icon_facebook.png" alt="facebook" class="icon">
+                        <img src="../accueil/Logos/icon_ig.png" alt="instagram" class="icon">
+                        <img src="../accueil/Logos/icon_tw.png" alt="twitter" class="icon">
+                    </div>
+    
+                </div>
+
             </div>
         </section>
 
@@ -201,8 +183,10 @@
             <nav >
                 <img src="../accueil/Logos/logohome.png" alt="icone de batman" class="iconBatman1">
 
-                <a href="../accueil/index.html" class="HOME">HOME</a>
-                <a href="game.html" class="GAME">GAME</a>
+                <div class="lienNav">
+                    <a href="../accueil/index.html" class="HOME">HOME</a>
+                    <a href="game.html" class="GAME">GAME</a>
+                </div>
     
             </nav>
     
@@ -258,30 +242,34 @@
                             <label for="Dentiste">Dentiste</label><br>
                             </div>
 
-                            <input type="submit" value="QUESTION SUIVANTE">
+                                                        <div class="submit">
+                                <input type="submit" value="QUESTION SUIVANTE">
+                            </div>
+
                         </form>
                     </div>
 
-                    <div class="sectionFooter">
-                        <div class="phraseFooter">
-                            <img src="../accueil/Logos/icon_WB.png" alt="icon_WB">
-                            <div class="textFooter">
-                                Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves
-                            </div>
-                        </div>
-            
-                        <div class="enligne">
-                            <img src="../accueil/Logos/logo_sayna_white.png" alt="sayna" >
-                            <img src="../accueil/Logos/icon_x.png" alt="icon_x">
-                            <img src="../accueil/Logos/icon_DC.png" alt="icon_DC">
-                            <img src="../accueil/Logos/icon_facebook.png" alt="facebook" class="icon">
-                            <img src="../accueil/Logos/icon_ig.png" alt="instagram" class="icon">
-                            <img src="../accueil/Logos/icon_tw.png" alt="twitter" class="icon">
-                        </div>
-        
-                    </div>
 
                 </div>
+                <div class="sectionFooter">
+                    <div class="phraseFooter">
+                        <img src="../accueil/Logos/icon_WB.png" alt="icon_WB">
+                        <div class="textFooter">
+                            Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves
+                        </div>
+                    </div>
+        
+                    <div class="enligne">
+                        <img src="../accueil/Logos/logo_sayna_white.png" alt="sayna" >
+                        <img src="../accueil/Logos/icon_x.png" alt="icon_x">
+                        <img src="../accueil/Logos/icon_DC.png" alt="icon_DC">
+                        <img src="../accueil/Logos/icon_facebook.png" alt="facebook" class="icon">
+                        <img src="../accueil/Logos/icon_ig.png" alt="instagram" class="icon">
+                        <img src="../accueil/Logos/icon_tw.png" alt="twitter" class="icon">
+                    </div>
+    
+                </div>
+
             </div>
         </section>
 
@@ -292,8 +280,10 @@
             <nav >
                 <img src="../accueil/Logos/logohome.png" alt="icone de batman" class="iconBatman1">
 
-                <a href="../accueil/index.html" class="HOME">HOME</a>
-                <a href="game.html" class="GAME">GAME</a>
+                <div class="lienNav">
+                    <a href="../accueil/index.html" class="HOME">HOME</a>
+                    <a href="game.html" class="GAME">GAME</a>
+                </div>
     
             </nav>
     
@@ -349,30 +339,34 @@
                             <label for="Uncouteau">Un couteau</label><br>
                             </div>
 
-                            <input type="submit" value="QUESTION SUIVANTE">
+                                                        <div class="submit">
+                                <input type="submit" value="QUESTION SUIVANTE">
+                            </div>
+
                         </form>
                     </div>
 
-                    <div class="sectionFooter">
-                        <div class="phraseFooter">
-                            <img src="../accueil/Logos/icon_WB.png" alt="icon_WB">
-                            <div class="textFooter">
-                                Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves
-                            </div>
-                        </div>
-            
-                        <div class="enligne">
-                            <img src="../accueil/Logos/logo_sayna_white.png" alt="sayna" >
-                            <img src="../accueil/Logos/icon_x.png" alt="icon_x">
-                            <img src="../accueil/Logos/icon_DC.png" alt="icon_DC">
-                            <img src="../accueil/Logos/icon_facebook.png" alt="facebook" class="icon">
-                            <img src="../accueil/Logos/icon_ig.png" alt="instagram" class="icon">
-                            <img src="../accueil/Logos/icon_tw.png" alt="twitter" class="icon">
-                        </div>
-        
-                    </div>
 
                 </div>
+                <div class="sectionFooter">
+                    <div class="phraseFooter">
+                        <img src="../accueil/Logos/icon_WB.png" alt="icon_WB">
+                        <div class="textFooter">
+                            Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves
+                        </div>
+                    </div>
+        
+                    <div class="enligne">
+                        <img src="../accueil/Logos/logo_sayna_white.png" alt="sayna" >
+                        <img src="../accueil/Logos/icon_x.png" alt="icon_x">
+                        <img src="../accueil/Logos/icon_DC.png" alt="icon_DC">
+                        <img src="../accueil/Logos/icon_facebook.png" alt="facebook" class="icon">
+                        <img src="../accueil/Logos/icon_ig.png" alt="instagram" class="icon">
+                        <img src="../accueil/Logos/icon_tw.png" alt="twitter" class="icon">
+                    </div>
+    
+                </div>
+
             </div>
         </section>
 
@@ -383,8 +377,10 @@
             <nav >
                 <img src="../accueil/Logos/logohome.png" alt="icone de batman" class="iconBatman1">
 
-                <a href="../accueil/index.html" class="HOME">HOME</a>
-                <a href="game.html" class="GAME">GAME</a>
+                <div class="lienNav">
+                    <a href="../accueil/index.html" class="HOME">HOME</a>
+                    <a href="game.html" class="GAME">GAME</a>
+                </div>
     
             </nav>
     
@@ -440,30 +436,34 @@
                             <label for="PeterJackson">Peter Jackson</label><br>
                             </div>
 
-                            <input type="submit" value="QUESTION SUIVANTE">
+                                                        <div class="submit">
+                                <input type="submit" value="QUESTION SUIVANTE">
+                            </div>
+
                         </form>
                     </div>
 
-                    <div class="sectionFooter">
-                        <div class="phraseFooter">
-                            <img src="../accueil/Logos/icon_WB.png" alt="icon_WB">
-                            <div class="textFooter">
-                                Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves
-                            </div>
-                        </div>
-            
-                        <div class="enligne">
-                            <img src="../accueil/Logos/logo_sayna_white.png" alt="sayna" >
-                            <img src="../accueil/Logos/icon_x.png" alt="icon_x">
-                            <img src="../accueil/Logos/icon_DC.png" alt="icon_DC">
-                            <img src="../accueil/Logos/icon_facebook.png" alt="facebook" class="icon">
-                            <img src="../accueil/Logos/icon_ig.png" alt="instagram" class="icon">
-                            <img src="../accueil/Logos/icon_tw.png" alt="twitter" class="icon">
-                        </div>
-        
-                    </div>
 
                 </div>
+                <div class="sectionFooter">
+                    <div class="phraseFooter">
+                        <img src="../accueil/Logos/icon_WB.png" alt="icon_WB">
+                        <div class="textFooter">
+                            Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves
+                        </div>
+                    </div>
+        
+                    <div class="enligne">
+                        <img src="../accueil/Logos/logo_sayna_white.png" alt="sayna" >
+                        <img src="../accueil/Logos/icon_x.png" alt="icon_x">
+                        <img src="../accueil/Logos/icon_DC.png" alt="icon_DC">
+                        <img src="../accueil/Logos/icon_facebook.png" alt="facebook" class="icon">
+                        <img src="../accueil/Logos/icon_ig.png" alt="instagram" class="icon">
+                        <img src="../accueil/Logos/icon_tw.png" alt="twitter" class="icon">
+                    </div>
+    
+                </div>
+
             </div>
         </section>
 
@@ -474,8 +474,10 @@
             <nav >
                 <img src="../accueil/Logos/logohome.png" alt="icone de batman" class="iconBatman1">
 
-                <a href="../accueil/index.html" class="HOME">HOME</a>
-                <a href="game.html" class="GAME">GAME</a>
+                <div class="lienNav">
+                    <a href="../accueil/index.html" class="HOME">HOME</a>
+                    <a href="game.html" class="GAME">GAME</a>
+                </div>
     
             </nav>
     
@@ -510,7 +512,7 @@
                 <div>
                     <h1>5/15</h1>
                 </div>
-                <div id="question">
+                <div class="question">
                     <div>
                         <img src="Illustrations/Batgame_7.png" alt="batman + icon">
                     </div>
@@ -531,30 +533,34 @@
                             <label for="Allemagne"></label><br>
                             </div>
 
-                            <input type="submit" value="QUESTION SUIVANTE">
+                                                        <div class="submit">
+                                <input type="submit" value="QUESTION SUIVANTE">
+                            </div>
+
                         </form>
                     </div>
 
-                    <div class="sectionFooter">
-                        <div class="phraseFooter">
-                            <img src="../accueil/Logos/icon_WB.png" alt="icon_WB">
-                            <div class="textFooter">
-                                Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves
-                            </div>
-                        </div>
-            
-                        <div class="enligne">
-                            <img src="../accueil/Logos/logo_sayna_white.png" alt="sayna" >
-                            <img src="../accueil/Logos/icon_x.png" alt="icon_x">
-                            <img src="../accueil/Logos/icon_DC.png" alt="icon_DC">
-                            <img src="../accueil/Logos/icon_facebook.png" alt="facebook" class="icon">
-                            <img src="../accueil/Logos/icon_ig.png" alt="instagram" class="icon">
-                            <img src="../accueil/Logos/icon_tw.png" alt="twitter" class="icon">
-                        </div>
-        
-                    </div>
 
                 </div>
+                <div class="sectionFooter">
+                    <div class="phraseFooter">
+                        <img src="../accueil/Logos/icon_WB.png" alt="icon_WB">
+                        <div class="textFooter">
+                            Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves
+                        </div>
+                    </div>
+        
+                    <div class="enligne">
+                        <img src="../accueil/Logos/logo_sayna_white.png" alt="sayna" >
+                        <img src="../accueil/Logos/icon_x.png" alt="icon_x">
+                        <img src="../accueil/Logos/icon_DC.png" alt="icon_DC">
+                        <img src="../accueil/Logos/icon_facebook.png" alt="facebook" class="icon">
+                        <img src="../accueil/Logos/icon_ig.png" alt="instagram" class="icon">
+                        <img src="../accueil/Logos/icon_tw.png" alt="twitter" class="icon">
+                    </div>
+    
+                </div>
+
             </div>
         </section>
 
@@ -565,8 +571,10 @@
             <nav >
                 <img src="../accueil/Logos/logohome.png" alt="icone de batman" class="iconBatman1">
 
-                <a href="../accueil/index.html" class="HOME">HOME</a>
-                <a href="game.html" class="GAME">GAME</a>
+                <div class="lienNav">
+                    <a href="../accueil/index.html" class="HOME">HOME</a>
+                    <a href="game.html" class="GAME">GAME</a>
+                </div>
     
             </nav>
     
@@ -601,7 +609,7 @@
                 <div>
                     <h1>6/15</h1>
                 </div>
-                <div id="question">
+                <div class="question">
                     <div>
                         <img src="Illustrations/Batgame_8.png" alt="parapluie">
                     </div>
@@ -623,7 +631,10 @@
                             <label for="PoisonIvy">Poison Ivy</label><br>
                             </div>
 
-                            <input type="submit" value="QUESTION SUIVANTE">
+                                                        <div class="submit">
+                                <input type="submit" value="QUESTION SUIVANTE">
+                            </div>
+
                         </form>
 
                         <img src="Illustrations/Batgame_9-1.png" alt="icon en rouge">
@@ -631,26 +642,27 @@
         
                     </div>
 
-                    <div class="sectionFooter">
-                        <div class="phraseFooter">
-                            <img src="../accueil/Logos/icon_WB.png" alt="icon_WB">
-                            <div class="textFooter">
-                                Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves
-                            </div>
-                        </div>
-            
-                        <div class="enligne">
-                            <img src="../accueil/Logos/logo_sayna_white.png" alt="sayna" >
-                            <img src="../accueil/Logos/icon_x.png" alt="icon_x">
-                            <img src="../accueil/Logos/icon_DC.png" alt="icon_DC">
-                            <img src="../accueil/Logos/icon_facebook.png" alt="facebook" class="icon">
-                            <img src="../accueil/Logos/icon_ig.png" alt="instagram" class="icon">
-                            <img src="../accueil/Logos/icon_tw.png" alt="twitter" class="icon">
-                        </div>
-        
-                    </div>
 
                 </div>
+                <div class="sectionFooter">
+                    <div class="phraseFooter">
+                        <img src="../accueil/Logos/icon_WB.png" alt="icon_WB">
+                        <div class="textFooter">
+                            Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves
+                        </div>
+                    </div>
+        
+                    <div class="enligne">
+                        <img src="../accueil/Logos/logo_sayna_white.png" alt="sayna" >
+                        <img src="../accueil/Logos/icon_x.png" alt="icon_x">
+                        <img src="../accueil/Logos/icon_DC.png" alt="icon_DC">
+                        <img src="../accueil/Logos/icon_facebook.png" alt="facebook" class="icon">
+                        <img src="../accueil/Logos/icon_ig.png" alt="instagram" class="icon">
+                        <img src="../accueil/Logos/icon_tw.png" alt="twitter" class="icon">
+                    </div>
+    
+                </div>
+
             </div>
         </section>
 
@@ -661,8 +673,10 @@
             <nav >
                 <img src="../accueil/Logos/logohome.png" alt="icone de batman" class="iconBatman1">
 
-                <a href="../accueil/index.html" class="HOME">HOME</a>
-                <a href="game.html" class="GAME">GAME</a>
+                <div class="lienNav">
+                    <a href="../accueil/index.html" class="HOME">HOME</a>
+                    <a href="game.html" class="GAME">GAME</a>
+                </div>
     
             </nav>
     
@@ -698,16 +712,16 @@
                 <div>
                     <h1>7/15</h1>
                 </div>
-                <div id="question">
+                <div class="question">
                     <div>
-                        <img src="Illustrations/Batgame_.png" alt="">
+                        <img src="Illustrations/Batgame_10.png" alt="journal">
                     </div>
 
                     <div>
                         <h2>Quelle ville Batman défend-il ?</h2>
                         <form action="">
                             <div class="divCheckbox">
-                                <input type="checkbox" name="GothamCity" id="GothamCity">
+                                <input type="checkbox" name="GothamCity" class="GothamCity">
                                 <label for="GothamCity">Gotham City</label><br>
                             </div>
                             <div class="divCheckbox">
@@ -719,30 +733,34 @@
                             <label for="HellsKitchen">Hell’s Kitchen</label><br>
                             </div>
 
-                            <input type="submit" value="QUESTION SUIVANTE">
+                                                        <div class="submit">
+                                <input type="submit" value="QUESTION SUIVANTE">
+                            </div>
+
                         </form>
                     </div>
 
-                    <div class="sectionFooter">
-                        <div class="phraseFooter">
-                            <img src="../accueil/Logos/icon_WB.png" alt="icon_WB">
-                            <div class="textFooter">
-                                Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves
-                            </div>
-                        </div>
-            
-                        <div class="enligne">
-                            <img src="../accueil/Logos/logo_sayna_white.png" alt="sayna" >
-                            <img src="../accueil/Logos/icon_x.png" alt="icon_x">
-                            <img src="../accueil/Logos/icon_DC.png" alt="icon_DC">
-                            <img src="../accueil/Logos/icon_facebook.png" alt="facebook" class="icon">
-                            <img src="../accueil/Logos/icon_ig.png" alt="instagram" class="icon">
-                            <img src="../accueil/Logos/icon_tw.png" alt="twitter" class="icon">
-                        </div>
-        
-                    </div>
 
                 </div>
+                <div class="sectionFooter">
+                    <div class="phraseFooter">
+                        <img src="../accueil/Logos/icon_WB.png" alt="icon_WB">
+                        <div class="textFooter">
+                            Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves
+                        </div>
+                    </div>
+        
+                    <div class="enligne">
+                        <img src="../accueil/Logos/logo_sayna_white.png" alt="sayna" >
+                        <img src="../accueil/Logos/icon_x.png" alt="icon_x">
+                        <img src="../accueil/Logos/icon_DC.png" alt="icon_DC">
+                        <img src="../accueil/Logos/icon_facebook.png" alt="facebook" class="icon">
+                        <img src="../accueil/Logos/icon_ig.png" alt="instagram" class="icon">
+                        <img src="../accueil/Logos/icon_tw.png" alt="twitter" class="icon">
+                    </div>
+    
+                </div>
+
             </div>
         </section>
 
@@ -753,8 +771,10 @@
             <nav >
                 <img src="../accueil/Logos/logohome.png" alt="icone de batman" class="iconBatman1">
 
-                <a href="../accueil/index.html" class="HOME">HOME</a>
-                <a href="game.html" class="GAME">GAME</a>
+                <div class="lienNav">
+                    <a href="../accueil/index.html" class="HOME">HOME</a>
+                    <a href="game.html" class="GAME">GAME</a>
+                </div>
     
             </nav>
     
@@ -789,7 +809,7 @@
                 <div>
                     <h1>8/15</h1>
                 </div>
-                <div id="question">
+                <div class="question">
                     <div>
                         <img src="Illustrations/Batgame_11.png" alt="Batman qui s'envole">
                     </div>
@@ -810,30 +830,34 @@
                             <label for="MickaelKeaton">Mickael Keaton</label><br>
                             </div>
 
-                            <input type="submit" value="QUESTION SUIVANTE">
+                                                        <div class="submit">
+                                <input type="submit" value="QUESTION SUIVANTE">
+                            </div>
+
                         </form>
                     </div>
 
-                    <div class="sectionFooter">
-                        <div class="phraseFooter">
-                            <img src="../accueil/Logos/icon_WB.png" alt="icon_WB">
-                            <div class="textFooter">
-                                Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves
-                            </div>
-                        </div>
-            
-                        <div class="enligne">
-                            <img src="../accueil/Logos/logo_sayna_white.png" alt="sayna" >
-                            <img src="../accueil/Logos/icon_x.png" alt="icon_x">
-                            <img src="../accueil/Logos/icon_DC.png" alt="icon_DC">
-                            <img src="../accueil/Logos/icon_facebook.png" alt="facebook" class="icon">
-                            <img src="../accueil/Logos/icon_ig.png" alt="instagram" class="icon">
-                            <img src="../accueil/Logos/icon_tw.png" alt="twitter" class="icon">
-                        </div>
-        
-                    </div>
 
                 </div>
+                <div class="sectionFooter">
+                    <div class="phraseFooter">
+                        <img src="../accueil/Logos/icon_WB.png" alt="icon_WB">
+                        <div class="textFooter">
+                            Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves
+                        </div>
+                    </div>
+        
+                    <div class="enligne">
+                        <img src="../accueil/Logos/logo_sayna_white.png" alt="sayna" >
+                        <img src="../accueil/Logos/icon_x.png" alt="icon_x">
+                        <img src="../accueil/Logos/icon_DC.png" alt="icon_DC">
+                        <img src="../accueil/Logos/icon_facebook.png" alt="facebook" class="icon">
+                        <img src="../accueil/Logos/icon_ig.png" alt="instagram" class="icon">
+                        <img src="../accueil/Logos/icon_tw.png" alt="twitter" class="icon">
+                    </div>
+    
+                </div>
+
             </div>
         </section>
 
@@ -844,8 +868,10 @@
             <nav >
                 <img src="../accueil/Logos/logohome.png" alt="icone de batman" class="iconBatman1">
 
-                <a href="../accueil/index.html" class="HOME">HOME</a>
-                <a href="game.html" class="GAME">GAME</a>
+                <div class="lienNav">
+                    <a href="../accueil/index.html" class="HOME">HOME</a>
+                    <a href="game.html" class="GAME">GAME</a>
+                </div>
     
             </nav>
     
@@ -880,7 +906,7 @@
                 <div>
                     <h1>9/15</h1>
                 </div>
-                <div id="question">
+                <div class="question">
                     <div>
                         <img src="Illustrations/Batgame_12.png" alt="Le Pingouin">
                     </div>
@@ -903,33 +929,37 @@
 
                             <div>
                                 <img src="Illustrations/Batgame_13-1.png" alt="Bouche">
+                                                            <div class="submit">
                                 <input type="submit" value="QUESTION SUIVANTE">
+                            </div>
+
                                 <img src="Illustrations/Batgame_13.png" alt="homme en point d'interrogation">
 
                             </div>
                         </form>
                     </div>
 
-                    <div class="sectionFooter">
-                        <div class="phraseFooter">
-                            <img src="../accueil/Logos/icon_WB.png" alt="icon_WB">
-                            <div class="textFooter">
-                                Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves
-                            </div>
-                        </div>
-            
-                        <div class="enligne">
-                            <img src="../accueil/Logos/logo_sayna_white.png" alt="sayna" >
-                            <img src="../accueil/Logos/icon_x.png" alt="icon_x">
-                            <img src="../accueil/Logos/icon_DC.png" alt="icon_DC">
-                            <img src="../accueil/Logos/icon_facebook.png" alt="facebook" class="icon">
-                            <img src="../accueil/Logos/icon_ig.png" alt="instagram" class="icon">
-                            <img src="../accueil/Logos/icon_tw.png" alt="twitter" class="icon">
-                        </div>
-        
-                    </div>
 
                 </div>
+                <div class="sectionFooter">
+                    <div class="phraseFooter">
+                        <img src="../accueil/Logos/icon_WB.png" alt="icon_WB">
+                        <div class="textFooter">
+                            Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves
+                        </div>
+                    </div>
+        
+                    <div class="enligne">
+                        <img src="../accueil/Logos/logo_sayna_white.png" alt="sayna" >
+                        <img src="../accueil/Logos/icon_x.png" alt="icon_x">
+                        <img src="../accueil/Logos/icon_DC.png" alt="icon_DC">
+                        <img src="../accueil/Logos/icon_facebook.png" alt="facebook" class="icon">
+                        <img src="../accueil/Logos/icon_ig.png" alt="instagram" class="icon">
+                        <img src="../accueil/Logos/icon_tw.png" alt="twitter" class="icon">
+                    </div>
+    
+                </div>
+
             </div>
         </section>
 
@@ -940,8 +970,10 @@
             <nav >
                 <img src="../accueil/Logos/logohome.png" alt="icone de batman" class="iconBatman1">
 
-                <a href="../accueil/index.html" class="HOME">HOME</a>
-                <a href="game.html" class="GAME">GAME</a>
+                <div class="lienNav">
+                    <a href="../accueil/index.html" class="HOME">HOME</a>
+                    <a href="game.html" class="GAME">GAME</a>
+                </div>
     
             </nav>
     
@@ -976,7 +1008,7 @@
                 <div>
                     <h1>10/15</h1>
                 </div>
-                <div id="question">
+                <div class="question">
                     <div>
                         <img src="Illustrations/Batgame_14.png" alt="">
                     </div>
@@ -998,32 +1030,38 @@
                             <label for="HugoStrange">Hugo Strange</label><br>
                             </div>
                             <div>
-                                <input type="submit" value="QUESTION SUIVANTE">
+                                <div>
+                                    <input type="submit" value="QUESTION SUIVANTE">
+                                </div>
                                 <img src="Illustrations/Batgame_16.png" alt="Le petit homme avec des lunettes">
+
+
                             </div>
+
                         </form>
                     </div>
 
-                    <div class="sectionFooter">
-                        <div class="phraseFooter">
-                            <img src="../accueil/Logos/icon_WB.png" alt="icon_WB">
-                            <div class="textFooter">
-                                Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves
-                            </div>
-                        </div>
-            
-                        <div class="enligne">
-                            <img src="../accueil/Logos/logo_sayna_white.png" alt="sayna" >
-                            <img src="../accueil/Logos/icon_x.png" alt="icon_x">
-                            <img src="../accueil/Logos/icon_DC.png" alt="icon_DC">
-                            <img src="../accueil/Logos/icon_facebook.png" alt="facebook" class="icon">
-                            <img src="../accueil/Logos/icon_ig.png" alt="instagram" class="icon">
-                            <img src="../accueil/Logos/icon_tw.png" alt="twitter" class="icon">
-                        </div>
-        
-                    </div>
 
                 </div>
+                <div class="sectionFooter">
+                    <div class="phraseFooter">
+                        <img src="../accueil/Logos/icon_WB.png" alt="icon_WB">
+                        <div class="textFooter">
+                            Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves
+                        </div>
+                    </div>
+        
+                    <div class="enligne">
+                        <img src="../accueil/Logos/logo_sayna_white.png" alt="sayna" >
+                        <img src="../accueil/Logos/icon_x.png" alt="icon_x">
+                        <img src="../accueil/Logos/icon_DC.png" alt="icon_DC">
+                        <img src="../accueil/Logos/icon_facebook.png" alt="facebook" class="icon">
+                        <img src="../accueil/Logos/icon_ig.png" alt="instagram" class="icon">
+                        <img src="../accueil/Logos/icon_tw.png" alt="twitter" class="icon">
+                    </div>
+    
+                </div>
+
             </div>
         </section>
 
@@ -1034,8 +1072,10 @@
             <nav >
                 <img src="../accueil/Logos/logohome.png" alt="icone de batman" class="iconBatman1">
 
-                <a href="../accueil/index.html" class="HOME">HOME</a>
-                <a href="game.html" class="GAME">GAME</a>
+                <div class="lienNav">
+                    <a href="../accueil/index.html" class="HOME">HOME</a>
+                    <a href="game.html" class="GAME">GAME</a>
+                </div>
     
             </nav>
     
@@ -1070,7 +1110,7 @@
                 <div>
                     <h1>11/15</h1>
                 </div>
-                <div id="question">
+                <div class="question">
                     <div>
                         <img src="Illustrations/Batgame_17.png" alt="Catwoman">
                     </div>
@@ -1097,30 +1137,34 @@
                             </div>
 
 
-                            <input type="submit" value="QUESTION SUIVANTE">
+                            <div class="submit">
+                                <input type="submit" value="QUESTION SUIVANTE">
+                            </div>
+
                         </form>
                     </div>
 
-                    <div class="sectionFooter">
-                        <div class="phraseFooter">
-                            <img src="../accueil/Logos/icon_WB.png" alt="icon_WB">
-                            <div class="textFooter">
-                                Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves
-                            </div>
-                        </div>
-            
-                        <div class="enligne">
-                            <img src="../accueil/Logos/logo_sayna_white.png" alt="sayna" >
-                            <img src="../accueil/Logos/icon_x.png" alt="icon_x">
-                            <img src="../accueil/Logos/icon_DC.png" alt="icon_DC">
-                            <img src="../accueil/Logos/icon_facebook.png" alt="facebook" class="icon">
-                            <img src="../accueil/Logos/icon_ig.png" alt="instagram" class="icon">
-                            <img src="../accueil/Logos/icon_tw.png" alt="twitter" class="icon">
-                        </div>
-        
-                    </div>
 
                 </div>
+                <div class="sectionFooter">
+                    <div class="phraseFooter">
+                        <img src="../accueil/Logos/icon_WB.png" alt="icon_WB">
+                        <div class="textFooter">
+                            Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves
+                        </div>
+                    </div>
+        
+                    <div class="enligne">
+                        <img src="../accueil/Logos/logo_sayna_white.png" alt="sayna" >
+                        <img src="../accueil/Logos/icon_x.png" alt="icon_x">
+                        <img src="../accueil/Logos/icon_DC.png" alt="icon_DC">
+                        <img src="../accueil/Logos/icon_facebook.png" alt="facebook" class="icon">
+                        <img src="../accueil/Logos/icon_ig.png" alt="instagram" class="icon">
+                        <img src="../accueil/Logos/icon_tw.png" alt="twitter" class="icon">
+                    </div>
+    
+                </div>
+
             </div>
         </section>
 
@@ -1131,8 +1175,10 @@
             <nav >
                 <img src="../accueil/Logos/logohome.png" alt="icone de batman" class="iconBatman1">
 
-                <a href="../accueil/index.html" class="HOME">HOME</a>
-                <a href="game.html" class="GAME">GAME</a>
+                <div class="lienNav">
+                    <a href="../accueil/index.html" class="HOME">HOME</a>
+                    <a href="game.html" class="GAME">GAME</a>
+                </div>
     
             </nav>
     
@@ -1167,7 +1213,7 @@
                 <div>
                     <h1>12/15</h1>
                 </div>
-                <div id="question">
+                <div class="question">
                     <div>
                         <img src="Illustrations/Batgame_18.png" alt="batman en miniature">
                     </div>
@@ -1183,35 +1229,39 @@
                                 <input type="checkbox" name="laineetGeorges" id="laineetGeorges">
                                 <label for="laineetGeorges">laine et Georges</label><br>
                             </div>
-                            <div class="divCheckbox">
-                            <input type="checkbox" name="MarthaetJames" id="MarthaetJames">
-                            <label for="MarthaetJames">Martha et James</label><br>
+                                <div class="divCheckbox">
+                                <input type="checkbox" name="MarthaetJames" id="MarthaetJames">
+                                <label for="MarthaetJames">Martha et James</label><br>
                             </div>
 
-                            <input type="submit" value="QUESTION SUIVANTE">
+                            <div class="submit">
+                                <input type="submit" value="QUESTION SUIVANTE">
+                            </div>
+
                         </form>
                     </div>
 
-                    <div class="sectionFooter">
-                        <div class="phraseFooter">
-                            <img src="../accueil/Logos/icon_WB.png" alt="icon_WB">
-                            <div class="textFooter">
-                                Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves
-                            </div>
-                        </div>
-            
-                        <div class="enligne">
-                            <img src="../accueil/Logos/logo_sayna_white.png" alt="sayna" >
-                            <img src="../accueil/Logos/icon_x.png" alt="icon_x">
-                            <img src="../accueil/Logos/icon_DC.png" alt="icon_DC">
-                            <img src="../accueil/Logos/icon_facebook.png" alt="facebook" class="icon">
-                            <img src="../accueil/Logos/icon_ig.png" alt="instagram" class="icon">
-                            <img src="../accueil/Logos/icon_tw.png" alt="twitter" class="icon">
-                        </div>
-        
-                    </div>
 
                 </div>
+                <div class="sectionFooter">
+                    <div class="phraseFooter">
+                        <img src="../accueil/Logos/icon_WB.png" alt="icon_WB">
+                        <div class="textFooter">
+                            Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves
+                        </div>
+                    </div>
+        
+                    <div class="enligne">
+                        <img src="../accueil/Logos/logo_sayna_white.png" alt="sayna" >
+                        <img src="../accueil/Logos/icon_x.png" alt="icon_x">
+                        <img src="../accueil/Logos/icon_DC.png" alt="icon_DC">
+                        <img src="../accueil/Logos/icon_facebook.png" alt="facebook" class="icon">
+                        <img src="../accueil/Logos/icon_ig.png" alt="instagram" class="icon">
+                        <img src="../accueil/Logos/icon_tw.png" alt="twitter" class="icon">
+                    </div>
+    
+                </div>
+
             </div>
         </section>
 
@@ -1223,8 +1273,10 @@
             <nav >
                 <img src="../accueil/Logos/logohome.png" alt="icone de batman" class="iconBatman1">
 
-                <a href="../accueil/index.html" class="HOME">HOME</a>
-                <a href="game.html" class="GAME">GAME</a>
+                <div class="lienNav">
+                    <a href="../accueil/index.html" class="HOME">HOME</a>
+                    <a href="game.html" class="GAME">GAME</a>
+                </div>
     
             </nav>
     
@@ -1259,7 +1311,7 @@
                 <div>
                     <h1>13/15</h1>
                 </div>
-                <div id="question">
+                <div class="question">
                     <div>
                         <img src="Illustrations/Batgame_19.png" alt="Joker">
                     </div>
@@ -1280,30 +1332,34 @@
                             <label for="HeathLedger">Heath Ledger</label><br>
                             </div>
 
-                            <input type="submit" value="QUESTION SUIVANTE">
+                                                        <div class="submit">
+                                <input type="submit" value="QUESTION SUIVANTE">
+                            </div>
+
                         </form>
                     </div>
 
-                    <div class="sectionFooter">
-                        <div class="phraseFooter">
-                            <img src="../accueil/Logos/icon_WB.png" alt="icon_WB">
-                            <div class="textFooter">
-                                Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves
-                            </div>
-                        </div>
-            
-                        <div class="enligne">
-                            <img src="../accueil/Logos/logo_sayna_white.png" alt="sayna" >
-                            <img src="../accueil/Logos/icon_x.png" alt="icon_x">
-                            <img src="../accueil/Logos/icon_DC.png" alt="icon_DC">
-                            <img src="../accueil/Logos/icon_facebook.png" alt="facebook" class="icon">
-                            <img src="../accueil/Logos/icon_ig.png" alt="instagram" class="icon">
-                            <img src="../accueil/Logos/icon_tw.png" alt="twitter" class="icon">
-                        </div>
-        
-                    </div>
 
                 </div>
+                <div class="sectionFooter">
+                    <div class="phraseFooter">
+                        <img src="../accueil/Logos/icon_WB.png" alt="icon_WB">
+                        <div class="textFooter">
+                            Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves
+                        </div>
+                    </div>
+        
+                    <div class="enligne">
+                        <img src="../accueil/Logos/logo_sayna_white.png" alt="sayna" >
+                        <img src="../accueil/Logos/icon_x.png" alt="icon_x">
+                        <img src="../accueil/Logos/icon_DC.png" alt="icon_DC">
+                        <img src="../accueil/Logos/icon_facebook.png" alt="facebook" class="icon">
+                        <img src="../accueil/Logos/icon_ig.png" alt="instagram" class="icon">
+                        <img src="../accueil/Logos/icon_tw.png" alt="twitter" class="icon">
+                    </div>
+    
+                </div>
+
             </div>
         </section>
         
@@ -1314,8 +1370,10 @@
             <nav >
                 <img src="../accueil/Logos/logohome.png" alt="icone de batman" class="iconBatman1">
 
-                <a href="../accueil/index.html" class="HOME">HOME</a>
-                <a href="game.html" class="GAME">GAME</a>
+                <div class="lienNav">
+                    <a href="../accueil/index.html" class="HOME">HOME</a>
+                    <a href="game.html" class="GAME">GAME</a>
+                </div>
     
             </nav>
     
@@ -1350,7 +1408,7 @@
                 <div>
                     <h1>14/15</h1>
                 </div>
-                <div id="question">
+                <div class="question">
                     <div>
                         <img src="Illustrations/Batgame_20.png" alt="Batman et Robin">
                     </div>
@@ -1371,123 +1429,132 @@
                             <label for="date3">1941</label><br>
                             </div>
 
-                            <input type="submit" value="QUESTION SUIVANTE">
+                                                        <div class="submit">
+                                <input type="submit" value="QUESTION SUIVANTE">
+                            </div>
+
                         </form>
                     </div>
 
-                    <div class="sectionFooter">
-                        <div class="phraseFooter">
-                            <img src="../accueil/Logos/icon_WB.png" alt="icon_WB">
-                            <div class="textFooter">
-                                Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves
-                            </div>
-                        </div>
-            
-                        <div class="enligne">
-                            <img src="../accueil/Logos/logo_sayna_white.png" alt="sayna" >
-                            <img src="../accueil/Logos/icon_x.png" alt="icon_x">
-                            <img src="../accueil/Logos/icon_DC.png" alt="icon_DC">
-                            <img src="../accueil/Logos/icon_facebook.png" alt="facebook" class="icon">
-                            <img src="../accueil/Logos/icon_ig.png" alt="instagram" class="icon">
-                            <img src="../accueil/Logos/icon_tw.png" alt="twitter" class="icon">
-                        </div>
-        
-                    </div>
 
                 </div>
+                <div class="sectionFooter">
+                    <div class="phraseFooter">
+                        <img src="../accueil/Logos/icon_WB.png" alt="icon_WB">
+                        <div class="textFooter">
+                            Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves
+                        </div>
+                    </div>
+        
+                    <div class="enligne">
+                        <img src="../accueil/Logos/logo_sayna_white.png" alt="sayna" >
+                        <img src="../accueil/Logos/icon_x.png" alt="icon_x">
+                        <img src="../accueil/Logos/icon_DC.png" alt="icon_DC">
+                        <img src="../accueil/Logos/icon_facebook.png" alt="facebook" class="icon">
+                        <img src="../accueil/Logos/icon_ig.png" alt="instagram" class="icon">
+                        <img src="../accueil/Logos/icon_tw.png" alt="twitter" class="icon">
+                    </div>
+    
+                </div>
+
             </div>
         </section>
 
-                <!-- GAME ACCUEIL -->
-                <section class="barre"></section>
+        <!-- GAME ACCUEIL -->
+        <section class="barre"></section>
 
-                <section class="gameAccueil">
-                    <nav >
-                        <img src="../accueil/Logos/logohome.png" alt="icone de batman" class="iconBatman1">
+        <section class="gameAccueil">
+            <nav >
+                <img src="../accueil/Logos/logohome.png" alt="icone de batman" class="iconBatman1">
         
-                        <a href="../accueil/index.html" class="HOME">HOME</a>
-                        <a href="game.html" class="GAME">GAME</a>
+                <div class="lienNav">
+                    <a href="../accueil/index.html" class="HOME">HOME</a>
+                    <a href="game.html" class="GAME">GAME</a>
+                </div>
+                    
+            </nav>
             
-                    </nav>
-            
-                    <div class="sousNav">
-                        <div class="paradebut" >
-                            <div class="para" class="texte">
-                                <h1 class="menuTitre">
-                                    LET’S PLAY <br> A LITTLE GAME...
-                                </h1>
-                            </div>
+            <div class="sousNav">
+                <div class="paradebut" >
+                    <div class="texte">
+                        <h1 class="menuTitre">
+                            PLAY <br> A LITTLE GAME...
+                        </h1>
+                    </div>
                             
         
-                            <div class="ImagenBlock">
-                                <a href="#homedebut">
-                                    <img  class="bat_flèche" src="../accueil/Logos/logo_bat_flèche.png" alt="batman renversé" class="BatLien">
-                                </a>
-                                <img class="icon" src="../accueil/Logos/icon_facebook.png" alt="facebook">
-                                <img class="icon" src="../accueil/Logos/icon_ig.png" alt="instagram">
-                                <img class="icon" src="../accueil/Logos/icon_tw.png" alt="twitter">
-                                <a href="#formulaire">
-                                    <img src="../accueil/Logos/logo_bat_flèche_2.png" class="bat_flèche" alt="batman normal">
-                                </a>
+                    <div class="ImagenBlock">
+                        <a href="#homedebut">
+                                        <img  class="bat_flèche" src="../accueil/Logos/logo_bat_flèche.png" alt="batman renversé" class="BatLien">
+                        </a>
+                        <img class="icon" src="../accueil/Logos/icon_facebook.png" alt="facebook">
+                        <img class="icon" src="../accueil/Logos/icon_ig.png" alt="instagram">
+                        <img class="icon" src="../accueil/Logos/icon_tw.png" alt="twitter">
+                        <a href="#formulaire">
+                            <img src="../accueil/Logos/logo_bat_flèche_2.png" class="bat_flèche" alt="batman normal">
+                        </a>
                                     
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 15-la fille de Batman et Catwoman  -->
+        <section class="fille">
+            <div class="divSection">
+                <div>
+                    <h1>15/15</h1>
+                </div>
+                <div class="question">
+                    <div>
+                        <img src="Illustrations/Batgame_21.png" alt="Batman et Catwoman">
+                    </div>
+        
+                    <div>
+                        <h2>Qui est la fille de Batman et Catwoman (Earth - 2) ?</h2>
+                        <form action="">
+                            <div class="divCheckbox">
+                                <input type="checkbox" name="Oracle" id="Oracle">
+                                <label for="Oracle">Oracle</label><br>
                             </div>
+                            <div class="divCheckbox">
+                                <input type="checkbox" name="Huntress" id="Huntress">
+                                <label for="Huntress">Huntress</label><br>
+                            </div>
+                            <div class="divCheckbox">
+                                <input type="checkbox" name="BlackCanary" id="BlackCanary">
+                                <label for="BlackCanary"> Black Canary</label><br>
+                            </div>
+                            <div class="submit">
+                                <input type="submit" value="VOIR MON RESULTAT">
+
+                            </div>
+                        </form>
+                    </div>
+        
+        
+                </div>
+                <div class="sectionFooter">
+                    <div class="phraseFooter">
+                        <img src="../accueil/Logos/icon_WB.png" alt="icon_WB">
+                        <div class="textFooter">
+                            Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves
                         </div>
                     </div>
-                </section>
         
-                <!-- 15-la fille de Batman et Catwoman  -->
-                <section class="fille">
-                    <div class="divSection">
-                        <div>
-                            <h1>15/15</h1>
-                        </div>
-                        <div id="question">
-                            <div>
-                                <img src="Illustrations/Batgame_21.png" alt="Batman et Catwoman">
-                            </div>
-        
-                            <div>
-                                <h2>Qui est la fille de Batman et Catwoman (Earth - 2) ?</h2>
-                                <form action="">
-                                    <div class="divCheckbox">
-                                        <input type="checkbox" name="Oracle" id="Oracle">
-                                        <label for="Oracle">Oracle</label><br>
-                                    </div>
-                                    <div class="divCheckbox">
-                                        <input type="checkbox" name="Huntress" id="Huntress">
-                                        <label for="Huntress">Huntress</label><br>
-                                    </div>
-                                    <div class="divCheckbox">
-                                    <input type="checkbox" name="BlackCanary" id="BlackCanary">
-                                    <label for="BlackCanary"> Black Canary</label><br>
-                                    </div>
-        
-                                    <input type="submit" value="VOIR MON RESULTAT">
-                                </form>
-                            </div>
-        
-                            <div class="sectionFooter">
-                                <div class="phraseFooter">
-                                    <img src="../accueil/Logos/icon_WB.png" alt="icon_WB">
-                                    <div class="textFooter">
-                                        Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves
-                                    </div>
-                                </div>
-                    
-                                <div class="enligne">
-                                    <img src="../accueil/Logos/logo_sayna_white.png" alt="sayna" >
-                                    <img src="../accueil/Logos/icon_x.png" alt="icon_x">
-                                    <img src="../accueil/Logos/icon_DC.png" alt="icon_DC">
-                                    <img src="../accueil/Logos/icon_facebook.png" alt="facebook" class="icon">
-                                    <img src="../accueil/Logos/icon_ig.png" alt="instagram" class="icon">
-                                    <img src="../accueil/Logos/icon_tw.png" alt="twitter" class="icon">
-                                </div>
-                
-                            </div>
-        
-                        </div>
+                    <div class="enligne">
+                        <img src="../accueil/Logos/logo_sayna_white.png" alt="sayna" >
+                        <img src="../accueil/Logos/icon_x.png" alt="icon_x">
+                        <img src="../accueil/Logos/icon_DC.png" alt="icon_DC">
+                        <img src="../accueil/Logos/icon_facebook.png" alt="facebook" class="icon">
+                        <img src="../accueil/Logos/icon_ig.png" alt="instagram" class="icon">
+                        <img src="../accueil/Logos/icon_tw.png" alt="twitter" class="icon">
                     </div>
-                </section>
+    
+                </div>
+
+            </div>
+        </section>
         
 
 
