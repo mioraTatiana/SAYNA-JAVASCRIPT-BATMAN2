@@ -7,6 +7,7 @@
     <title>Game</title>
     <link rel="stylesheet" href="game.css">
     <link rel="stylesheet" href="../accueil/font/font.css">
+    <link rel="stylesheet" href="../accueil/animation.css">
 
 </head>
 <body>
@@ -126,7 +127,7 @@
                 </div>
                 <div class="question">
                     <div>
-                        <img src="Illustrations/Batgame_3.png" alt="Homme Mystère">
+                        <img src="Illustrations/Batgame_3.png" alt="Homme Mystère" id="hommeMystere">
                     </div>
 
                     <div>
@@ -223,7 +224,7 @@
                 </div>
                 <div class="question">
                     <div>
-                        <img src="Illustrations/Batgame_4.png" alt="Harley Quinn">
+                        <img src="Illustrations/Batgame_4.png" alt="Harley Quinn" id="imgHARLEYQUINN">
                     </div>
 
                     <div>
@@ -320,7 +321,7 @@
                 </div>
                 <div class="question">
                     <div>
-                        <img src="Illustrations/Batgame_5.png" alt="Double Face">
+                        <img src="Illustrations/Batgame_5.png" alt="Double Face" id="imgDoubleFace">
                     </div>
 
                     <div>
@@ -417,7 +418,7 @@
                 </div>
                 <div class="question">
                     <div>
-                        <img src="Illustrations/Batgame_6.png" alt="Icone de batman en jaune">
+                        <img src="Illustrations/Batgame_6.png" alt="Icone de batman en jaune" id="imgBatmanJaune">
                     </div>
 
                     <div>
@@ -514,7 +515,7 @@
                 </div>
                 <div class="question">
                     <div>
-                        <img src="Illustrations/Batgame_7.png" alt="batman + icon">
+                        <img src="Illustrations/Batgame_7.png" alt="batman + icon" id="imgBatmanIcon">
                     </div>
 
                     <div>
@@ -611,7 +612,7 @@
                 </div>
                 <div class="question">
                     <div>
-                        <img src="Illustrations/Batgame_8.png" alt="parapluie">
+                        <img src="Illustrations/Batgame_8.png" alt="parapluie" id="parapluie">
                     </div>
 
                     <div>
@@ -631,14 +632,14 @@
                             <label for="PoisonIvy">Poison Ivy</label><br>
                             </div>
 
-                                                        <div class="submit">
+                            <div class="submit">
                                 <input type="submit" value="QUESTION SUIVANTE">
                             </div>
 
                         </form>
 
-                        <img src="Illustrations/Batgame_9-1.png" alt="icon en rouge">
-                        <img src="Illustrations/Batgame_9.png" alt="icon en coeur">
+                        <img src="Illustrations/Batgame_9-1.png" alt="icon en rouge" id="iconRouge">
+                        <img src="Illustrations/Batgame_9.png" alt="icon en coeur" id="iconCoeur">
         
                     </div>
 
@@ -714,7 +715,7 @@
                 </div>
                 <div class="question">
                     <div>
-                        <img src="Illustrations/Batgame_10.png" alt="journal">
+                        <img src="Illustrations/Batgame_10.png" alt="journal" id="journal">
                     </div>
 
                     <div>
@@ -811,7 +812,7 @@
                 </div>
                 <div class="question">
                     <div>
-                        <img src="Illustrations/Batgame_11.png" alt="Batman qui s'envole">
+                        <img src="Illustrations/Batgame_11.png" alt="Batman qui s'envole" id="imgBATenvole">
                     </div>
 
                     <div>
@@ -908,7 +909,7 @@
                 </div>
                 <div class="question">
                     <div>
-                        <img src="Illustrations/Batgame_12.png" alt="Le Pingouin">
+                        <img src="Illustrations/Batgame_12.png" alt="Le Pingouin" id="ImgPingouin">
                     </div>
 
                     <div>
@@ -923,17 +924,17 @@
                                 <label for="LHommeMystère">L’Homme Mystère</label><br>
                             </div>
                             <div class="divCheckbox">
-                            <input type="checkbox" name="LeJoker" id="LeJoker">
-                            <label for="LeJoker">Le Joker</label><br>
+                                <input type="checkbox" name="LeJoker" id="LeJoker">
+                                <label for="LeJoker">Le Joker</label><br>
                             </div>
 
-                            <div>
-                                <img src="Illustrations/Batgame_13-1.png" alt="Bouche">
-                                                            <div class="submit">
-                                <input type="submit" value="QUESTION SUIVANTE">
-                            </div>
+                            <div id="div9">
+                                <img src="Illustrations/Batgame_13-1.png" alt="Bouche" id="bouche">
+                                <div class="submit">
+                                    <input type="submit" value="QUESTION SUIVANTE" id="submit9">
+                                </div>
 
-                                <img src="Illustrations/Batgame_13.png" alt="homme en point d'interrogation">
+                                <img src="Illustrations/Batgame_13.png" alt="homme en point d'interrogation" id="imgInterrogation">
 
                             </div>
                         </form>
@@ -1004,19 +1005,19 @@
 
         <!-- 10-Jonathan Crane -->
         <section class="JonathanCrane">
-            <div class="divSection">
+            <div class="divSection" id="div10">
                 <div>
                     <h1>10/15</h1>
                 </div>
-                <div class="question">
+                <div class="question" id="question10">
                     <div>
-                        <img src="Illustrations/Batgame_14.png" alt="">
+                        <img src="Illustrations/Batgame_14.png" alt="Jonathan Crane" id="jonathan">
                     </div>
 
                     <div>
                         <h2>Qui est Jonathan Crane ?</h2>
-                        <img src="Illustrations/Batgame_15.png" alt="L'homme avec des dynamites">
-                        <form action="">
+                        <img src="Illustrations/Batgame_15.png" alt="L'homme avec des dynamites" id="imgDynamite">
+                        <form action="" id="form10">
                             <div class="divCheckbox">
                                 <input type="checkbox" name="L’Épouvantail" id="L’Épouvantail">
                                 <label for="L’Épouvantail">L’Épouvantail</label><br>
@@ -1030,10 +1031,10 @@
                             <label for="HugoStrange">Hugo Strange</label><br>
                             </div>
                             <div>
-                                <div>
+                                <div class="submit">
                                     <input type="submit" value="QUESTION SUIVANTE">
                                 </div>
-                                <img src="Illustrations/Batgame_16.png" alt="Le petit homme avec des lunettes">
+                                <img src="Illustrations/Batgame_16.png" alt="Le petit homme avec des lunettes" id="lunette">
 
 
                             </div>
@@ -1112,7 +1113,7 @@
                 </div>
                 <div class="question">
                     <div>
-                        <img src="Illustrations/Batgame_17.png" alt="Catwoman">
+                        <img src="Illustrations/Batgame_17.png" alt="Catwoman" id="imgCatwoman">
                     </div>
 
                     <div>
@@ -1215,7 +1216,7 @@
                 </div>
                 <div class="question">
                     <div>
-                        <img src="Illustrations/Batgame_18.png" alt="batman en miniature">
+                        <img src="Illustrations/Batgame_18.png" alt="batman en miniature" id="imgBatmanMiniature">
                     </div>
 
                     <div>
@@ -1313,7 +1314,7 @@
                 </div>
                 <div class="question">
                     <div>
-                        <img src="Illustrations/Batgame_19.png" alt="Joker">
+                        <img src="Illustrations/Batgame_19.png" alt="Joker" id="imgJoker">
                     </div>
 
                     <div>
@@ -1410,7 +1411,7 @@
                 </div>
                 <div class="question">
                     <div>
-                        <img src="Illustrations/Batgame_20.png" alt="Batman et Robin">
+                        <img src="Illustrations/Batgame_20.png" alt="Batman et Robin" id="imgBatmanRobin">
                     </div>
 
                     <div>
@@ -1507,7 +1508,7 @@
                 </div>
                 <div class="question">
                     <div>
-                        <img src="Illustrations/Batgame_21.png" alt="Batman et Catwoman">
+                        <img src="Illustrations/Batgame_21.png" alt="Batman et Catwoman" id="ImgBatmanCatwoman">
                     </div>
         
                     <div>

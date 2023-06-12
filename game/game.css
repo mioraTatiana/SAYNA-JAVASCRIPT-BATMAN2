@@ -71,6 +71,7 @@ body{
 /* tous les sections */
 .barre{
     background-color: azure;
+    opacity: 0.5;
     height: 10px;
 }
 /* les div dans les sections */
@@ -93,7 +94,7 @@ nav,.sousNav,.divSection{
 .question{
     display: flex;
     flex-direction: row;
-    border: 5px solid white ;
+    gap: 20px;
 
 }
 
@@ -171,6 +172,146 @@ button,input[type="submit"]{
     width: 100px;
 }
 
+/* 1-HOMME MYSTERE */
+#hommeMystere{
+    height: 200px;
+}
 
+/* 2-HARLEY QUINN */
+#imgHARLEYQUINN{
+    height: 200px;
 
+}
 
+/* 3-DOUBLE FACE */
+#imgDoubleFace{
+    height: 200px;
+
+}
+
+/* 4-BATMAN JAUNE */
+#imgBatmanJaune{
+    height: 100px;
+    width: 150px;
+
+}
+
+/* 5-VILLE */
+#imgBatmanIcon{
+    height: 150px;
+    width: 250px;
+}
+
+/* 6- VILAIN  */
+#parapluie{
+    position: relative;
+    top: -80px;
+}
+
+#iconCoeur{
+    position: relative;
+    top: -240px;
+    left: -270px;
+
+}
+
+#iconRouge{
+    position: relative;
+    top: -480px;
+    left: 500px;
+}
+
+/* 7-VILLE DEFENDU */
+#journal{
+    height: 200px;
+}
+
+/* 8-Tim Burton  */
+#imgBATenvole{
+    height: 250px;
+}
+
+/* 9-Jack Nicholson */
+#ImgPingouin{
+    position: relative;
+    top: -50px;
+    height: 200px;
+}
+#div9{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#bouche{
+    position: relative;
+    left: -200px;
+    height: 250px;
+}
+
+#submit9{
+    position: relative;
+    left: -300px;
+}
+
+#imgInterrogation{
+    height: 250px;
+    position: relative;
+    left: -350px;
+}
+
+/* 10-Jonathan Crane */
+#div10{
+    /* height: 400px; */
+}
+#question10{
+    padding-top: 150px;
+    height: 400px;
+}
+
+#jonathan{
+    height: 200px;
+}
+
+#form10{
+    position: relative;
+    top: -240px;
+}
+#imgDynamite{
+    position: relative;
+    top: -200px;
+    left: 170px;
+}
+
+#lunette{
+    position: relative;
+    top: -230px;
+    left: 300px;
+}
+
+/*  11-Catwoman  */
+#imgCatwoman{
+    width: 250px;
+}
+
+/* 12-LES PARENTS DE BRUCE */
+#imgBatmanMiniature{
+    height: 250px;
+    position: relative;
+    top: -50px;
+}
+
+/* 13-Joker */
+#imgJoker{
+    height: 300px;
+}
+
+#imgBatmanRobin{
+    height: 200px;
+
+}
+
+#ImgBatmanCatwoman{
+    height: 230px;
+
+}

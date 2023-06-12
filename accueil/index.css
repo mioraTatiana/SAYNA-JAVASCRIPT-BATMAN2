@@ -76,7 +76,7 @@ header{
     float: right;
     gap: 1px;
     position: fixed;
-    right: 74px;
+    right: 64px;
     top: 150px;
 
 }
@@ -89,7 +89,7 @@ header{
 .icon{
     width: 20px;
     height: 20px;
-    padding-left: 40px;
+    padding-left: 30px;
     padding-top: 10px;
     padding-bottom: 20px;
 
@@ -106,10 +106,20 @@ nav{
     padding-right: 10px;
 }
 
+.navLien{
+    position: relative;
+    right: 50px;
+}
+
 #HOME{
     text-decoration: none;
     color: #ffffff;
-    padding-right: 15px;
+}
+
+#GAME{
+    text-decoration: none;
+    color: #ffffff;
+
 }
 
 #sousNav{
